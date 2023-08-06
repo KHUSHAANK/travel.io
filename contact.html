@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Us - Travel Website</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .hero-image {
+        background-image: url("https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80");
+        background-size: cover;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .hero-text {
+        color: white;
+        text-align: center;
+      }
+      .hero-text h1 {
+        font-size: 48px;
+      }
+      .contact-form {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0,0,0,.1);
+      }
+      .contact-form input[type="text"],
+      .contact-form input[type="email"],
+      .contact-form textarea {
+          width:100%;
+          padding :12px ;
+          margin :8px ;
+          border-radius :4px ;
+          border :1px solid #ccc ;
+          box-sizing :border-box ;
+          resize :vertical ;
+       }
+       .contact-form input[type="submit"]{
+           width :100% ;
+           background-color :#4CAF50 ;
+           color:white ;
+           padding :14px ;
+           margin-top :10px ;
+           border:none ;
+           border-radius :4px ; 
+           cursor:pointer ; 
+       } 
+       .contact-form input[type="submit"]:hover{
+            background-color:#45a049 ; 
+       } 
+              /* Styles for the header */
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav li {
+	margin-right: 20px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <a href="https://www.google.com/travel/" target="_blank"><h1>Travel.io</h1></a>
+          <li><a href="index.html" >Home</a></li>
+          <li><a href="about.html" >About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html" >Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="hero-image">
+      <div class="hero-text">
+        <h1>Contact Us</h1>
+      </div>
+    </div>
+
+    <div class="contact-form">
+     <form action="/action_page.php">
+         <label for="fname">First Name</label><br />
+         <input type="text" id="fname" name="firstname" placeholder="Your name.."><br />
+         
+         <label for="lname">Last Name</label><br />
+         <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br />
+         
+         <label for ="email">Email</label><br />
+         <input type ="email" id ="email" name ="emailaddress" placeholder ="Your email address.."><br />
+         
+         <label for ="subject">Subject</label><br />
+         <textarea id ="subject" name ="subject" placeholder ="Write something.." style = "height=200"></textarea><br />
+
+         <input type = "submit"value = "Submit">
+     </form>   
+    </div>
+</body>
+
+</html>
